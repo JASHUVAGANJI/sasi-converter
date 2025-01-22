@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Use a Node.js base image
 FROM node:16
 
@@ -25,3 +26,10 @@ EXPOSE 3000
 # Start the application
 CMD ["npm", "start"]
 
+=======
+FROM node:18-alpine
+WORKDIR /app
+COPY . .
+RUN npm install
+CMD ["node", "index.js"]
+>>>>>>> e82879961a1a5c390827bce57126877ca44e931e
